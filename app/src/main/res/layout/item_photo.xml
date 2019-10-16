@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="50dp">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/item_photo_username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="RaulMendezA" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/item_photo_threepoints"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+        android:src="@drawable/ic_menu"
+        app:layout_constraintBottom_toTopOf="@id/item_photo_main_image_iv"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/item_photo_main_image_iv"
+        android:layout_width="match_parent"
+        android:layout_height="450dp"
+        android:paddingTop="10dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/corgisbbs"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/item_photo_username" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/item_photo_like"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:src="@drawable/ic_star"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/item_photo_main_image_iv" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/item_photo_comment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:src="@drawable/ic_chat"
+        app:layout_constraintLeft_toRightOf="@id/item_photo_like"
+        app:layout_constraintTop_toBottomOf="@id/item_photo_main_image_iv" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/item_photo_likes_amount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        app:layout_constraintLeft_toRightOf="@id/item_photo_comment"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/item_photo_like"
+        tools:text="69 people like this" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
